@@ -1,6 +1,5 @@
 function sum(a, b) {
-  return typeOf a === 'number' && typeOf b === 'number' ? a + b : 'TypeError';
+  return typeof a === 'number' && typeof b === 'number' ? a + b : 'TypeError';
 }
 
-module.exports = sum ;
- 
+module.exports = sum;
