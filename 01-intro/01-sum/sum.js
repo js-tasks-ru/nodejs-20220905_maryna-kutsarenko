@@ -1,5 +1,9 @@
 function sum(a, b) {
-  return typeof a === 'number' && typeof b === 'number' ? a + b : 'TypeError';
+  if (typeof a === 'number' && typeof b === 'number') {
+    return a + b;
+  } else {
+    throw new TypeError;
+  }
 }
 
 module.exports = sum;
